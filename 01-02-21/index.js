@@ -56,3 +56,13 @@ const deleteItem = () => {
         })
     })
 }
+
+/* Validación de formularios*/
+const nombre1 = document.querySelector('#nombre-01')
+const nombre2 = document.querySelector('#nombre-02')
+const form = document.querySelector('.formulario')
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault() // Prevenimos la recarga de la página.
+    nombre1.value == nombre2.value ? alert('Los nombres coinciden.') : alert('Los nombres no coinciden.')
+})

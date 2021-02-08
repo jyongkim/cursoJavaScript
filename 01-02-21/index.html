@@ -3,13 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    <h2>Lista de tareas</h2>
     <input type="text">
     <button>Agregar</button>
     <ul>
     </ul>
+    <hr>
+    <h2>Validación de formularios</h2>
+    <form class="formulario">
+        <label for="nombre-01">Nombre</label>
+        <input
+            pattern="[a-z A-Z ñÑ]{2,50}"
+            maxlength="50"
+            placeholder="Ingrese su nombre"
+            type="text"
+            id="nombre-01"
+            name="nombre-01"
+            required
+            title="Ingrese su nombre sólo con letras">
+        <label for="nombre-02">Repetir nombre</label>
+        <input
+            pattern="[a-z A-Z ñÑ]{2,50}"
+            maxlength="50"
+            type="text"
+            id="nombre-02"
+            name="nombre-02"
+            placeholder="Repita su nombre"
+            required
+            title="Ingrese su nombre sólo con letras">
+        <label for="telefono">Teléfono</label>
+        <input
+            placeholder="(XXXXX)XXXX-XXXXXX"
+            pattern="[\(]\d{2,5}[\)]\d{4}[\-]\d{3,6}"
+            type="tel">
+        <input
+            placeholder="0-9"
+            pattern="[0-9]{6,10}"
+            type="tel">
+        <input type="submit" name="" id="">
+
+    </form>
+
     <script src="index.js"></script>
 </body>
 </html>
