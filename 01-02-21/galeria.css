@@ -54,7 +54,7 @@ header {
     opacity: 1;
 }
 
-button {
+.boton-galeria {
     background: transparent;
     color: #eee;
     border: none;
@@ -67,7 +67,7 @@ button {
     opacity: .3;
 }
 
-button:hover {
+.boton-galeria:hover {
     opacity: .7;
 }
 
